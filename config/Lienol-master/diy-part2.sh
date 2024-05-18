@@ -29,7 +29,8 @@ echo "DISTRIB_SOURCECODE='Lienol'" >>package/base-files/files/etc/openwrt_releas
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/{containerd,libnetwork,runc,tini} feeds/packages/utils
 rm -rf feeds/packages/lang/golang
-rm -rf feeds/packages/net/xray-core
+rm -rf package/feeds/packages/xray-core
+rm -rf package/feeds/packages/zerotier
 # Add third-party software packages (The entire repository)
 # git clone https://github.com/libremesh/lime-packages.git package/lime-packages
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
